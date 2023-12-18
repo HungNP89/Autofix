@@ -17,7 +17,6 @@ const AdminProcessed = lazy(() => import("./Admin/AdminProcessed"));
 import {GoogleOAuthProvider } from  '@react-oauth/google';
 const LandingPage = lazy(() => import( "./Pages/LandingPage"));
 const Cancelled = lazy(() => import("./Admin/Cancelled")) ;
-const NotFound = lazy(() => import('./Helpers/NotFound'));
 const Verify = lazy(() => import('./Authentication/Verify'));
 const BookingHistory = lazy(() => import('./Pages/BookingHistory'));
 function App() {
@@ -33,7 +32,6 @@ function App() {
         <Route path="/about" element={<About />}/>
         <Route path="contact" element={<Contact />} />
         <Route path="/main/history" element={<ProtectedRoute requiredRole='user'><BookingHistory/></ProtectedRoute>}/>
-        <Route path="*" element={<NotFound />} />
         <Route path="/autofix" element={<LandingPage/>} />
         <Route path="/verify" element={<Verify/>}/>
         <Route path="/admin" element={<AdminLogin/>}/>
