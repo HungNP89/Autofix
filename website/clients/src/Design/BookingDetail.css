@@ -1,0 +1,66 @@
+.booking-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+:where(.css-dev-only-do-not-override-qgg3xn).ant-pagination .ant-pagination-item a {
+    display: inline;
+}
+
+.booking-page .ant-layout  {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+
+  .booking-page .ant-menu {
+    font-size: 15px;
+  }
+
+  :where(.css-dev-only-do-not-override-qgg3xn).ant-menu .ant-menu-item .ant-menu-item-icon, :where(.css-dev-only-do-not-override-qgg3xn).ant-menu .ant-menu-submenu-title .ant-menu-item-icon, :where(.css-dev-only-do-not-override-qgg3xn).ant-menu .ant-menu-item .anticon, :where(.css-dev-only-do-not-override-qgg3xn).ant-menu .ant-menu-submenu-title .anticon {
+    font-size: 20px !important;
+    margin-right: 10px;
+  }
+
+  :where(.css-dev-only-do-not-override-qgg3xn).ant-menu-inline .ant-menu-item {
+    height: 60px !important;
+  }
+
+  .logout-btn {
+    width: 100%;
+    border-radius: 10em;
+    height: 35;
+    color: white;
+    font-size: 15;
+  }
+
+  .logo2 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .user-icon1 {
+    width: 34px;
+    border-radius: 120px;
+    height: 35px;
+    color: white;
+    font-size: 15px;
+    background-color: #1677ff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-header2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .category {
+    width:400px;
+    display: flex;
+    justify-content: space-evenly;
+    
+  }

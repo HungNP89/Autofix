@@ -1,0 +1,28 @@
+.booking-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.booking-page .ant-layout  {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+
+  :where(.css-dev-only-do-not-override-qgg3xn).ant-pagination .ant-pagination-item a {
+    display: inline;
+}
+  .booking-page .ant-menu {
+    font-size: 20px;
+  }
+
+  :where(.css-dev-only-do-not-override-qgg3xn).ant-menu .ant-menu-item .ant-menu-item-icon, :where(.css-dev-only-do-not-override-qgg3xn).ant-menu .ant-menu-submenu-title .ant-menu-item-icon, :where(.css-dev-only-do-not-override-qgg3xn).ant-menu .ant-menu-item .anticon, :where(.css-dev-only-do-not-override-qgg3xn).ant-menu .ant-menu-submenu-title .anticon {
+    font-size: 20px !important;
+    margin-right: 10px;
+  }
+
+  :where(.css-dev-only-do-not-override-qgg3xn).ant-menu-inline .ant-menu-item {
+    height: 60px !important;
+  }

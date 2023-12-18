@@ -1,0 +1,104 @@
+.form .ant-space-item {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+    gap: 5px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+    
+.form .ant-btn {
+    font-size: 15px;
+    height: 50px;
+    text-align: center;
+    display:block;
+    padding: 0 60px;
+    border-radius: 56px;
+    border: 2px solid gray;
+}
+
+.form .ant-btn :before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .9;
+  position: absolute;
+  top: 0;
+  transition: all .5s;
+  width: 92%;
+}
+
+.form-mechanic {
+    display: grid;
+    grid-template-columns: auto auto ;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    row-gap: 5px;
+    column-gap: 50px;
+}
+
+
+:where(.css-dev-only-do-not-override-qgg3xn).ant-space-gap-col-small {
+    margin-bottom: 20px;
+}
+
+:disabled {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    color: white !important;
+}
+.content1 {
+    display:flex;
+    justify-content: space-between;
+}
+.content2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    margin-right: 10px;
+    width: 30px;
+    height: 20px;
+    border-radius: 56px;
+    align-items: center;
+  }
+  .btn3 {
+    display: flex;
+    justify-content: center;
+    background-color: #1677ff;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 56px;
+    width: 30px;
+    height: 20px;
+    align-items: center;
+  }
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+    
+::-webkit-scrollbar-track {
+    background-color: whitesmoke;
+}
+    
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 5px;
+}

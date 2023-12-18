@@ -1,0 +1,42 @@
+.admin-login {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+  
+  }
+  .admin-login-container {
+    height: auto;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.87);
+  }
+  
+  
+  .admin-login-card {
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 35%;
+    backdrop-filter: blur(1px);
+  }
+  
+  .admin-login-card .login-form {
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .admin-login-card .ant-btn {
+    width: 40%;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    height: 5vh;
+    background-color: red;
+  }
