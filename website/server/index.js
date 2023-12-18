@@ -35,11 +35,6 @@ mongoose
 
 route(app);
 
-// Catch-all route for serving the 404 image
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../clients/download.png"));
-});
-
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
