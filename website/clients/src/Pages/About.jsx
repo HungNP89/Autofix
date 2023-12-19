@@ -49,7 +49,7 @@ function About() {
         <a className="logo">AUTOFIX</a>
 
         <nav className="navbar">
-          <a href="/autofix">Home</a>
+          <a href="/">Home</a>
           <a href="/main">Service</a>
           <a href="/main/detail">Bookings</a>
           <a href="about" className="active">

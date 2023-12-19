@@ -47,7 +47,7 @@ function LandingPage() {
         </a>
 
         <nav className="navbar" >
-          <a href="/autofix"  className="active">
+          <a href="/"  className="active">
             Home
           </a>
           <a href="/service" >

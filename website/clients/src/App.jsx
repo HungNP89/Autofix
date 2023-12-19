@@ -32,7 +32,7 @@ function App() {
         <Route path="/about" element={<About />}/>
         <Route path="contact" element={<Contact />} />
         <Route path="/main/history" element={<ProtectedRoute requiredRole='user'><BookingHistory/></ProtectedRoute>}/>
-        <Route path="/autofix" element={<LandingPage/>} />
+        <Route path="/" element={<LandingPage/>} />
         <Route path="/verify" element={<Verify/>}/>
         <Route path="/admin" element={<AdminLogin/>}/>
         <Route path="/panel" element={<ProtectedRoute requiredRole="admin"><AdminPanel /></ProtectedRoute>}/>

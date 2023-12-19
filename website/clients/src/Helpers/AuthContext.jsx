@@ -38,7 +38,7 @@ const AuthProvider = ({ children }) => {
     }
   }, [auth.token]);
 
-
+ 
   return (
     <authContext.Provider value={{ auth, setAuthData }}>
       {children}

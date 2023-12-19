@@ -67,7 +67,7 @@ function BookingHistory() {
   const handleLogOut = () => {
     Cookies.remove("authToken");
     setAuthData(null);
-    navigate("/autofix");
+    navigate("/");
   };
 
   const formatDate = (date) => {
