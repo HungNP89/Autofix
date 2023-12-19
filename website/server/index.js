@@ -6,7 +6,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const session = require("express-session");
 const passport = require("passport");
-//const MongoStore = require("connect-mongo")(session);
+const MongoStore = require("connect-mongo");
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -20,12 +20,13 @@ app.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
+    store: MongoStore.create({ mongoUrl: process.env.CONNECT_MONGODB_URL })
   })
 );
 app.use(passport.initialize());
 app.use(passport.session());
 mongoose
-  .connect(`mongodb://localhost:27017/carFixBooking`, {
+  .connect(process.env.CONNECT_MONGODB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     family: 4,
