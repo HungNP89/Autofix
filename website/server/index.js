@@ -20,13 +20,13 @@ app.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
-    store: MongoStore.create({ mongoUrl: process.env.CONNECT_MONGODB_URL })
+    store: MongoStore.create({ mongoUrl: process.env.CONNECT_MONGODB_URL2 })
   })
 );
 app.use(passport.initialize());
 app.use(passport.session());
 mongoose
-  .connect(process.env.CONNECT_MONGODB_URL, {
+  .connect(process.env.CONNECT_MONGODB_URL2, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
