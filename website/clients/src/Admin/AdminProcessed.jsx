@@ -61,7 +61,7 @@ function AdminProcessed() {
     try {
       setLoading(true);
       const response = await fetch(
-        `http://localhost:3000/booking/all?currentPage=${currentPage}&limit=${postPerPage}&status=${status}`
+        `https://autofix-server.onrender.com/booking/all?currentPage=${currentPage}&limit=${postPerPage}&status=${status}`
       );
       if (response.ok) {
         const data = await response.json();
@@ -106,12 +106,12 @@ function AdminProcessed() {
     try {
       setLoading(true);
       const response = await fetch(
-        `http://localhost:3000/booking/all?currentPage=${currentPage}&limit=${postPerPage}`
+        `https://autofix-server.onrender.com/booking/all?currentPage=${currentPage}&limit=${postPerPage}`
       );
       if (response.ok) {
         console.log(update);
         const updateResponse = await fetch(
-          `http://localhost:3000/booking/all/${update}`,
+          `https://autofix-server.onrender.com/booking/all/${update}`,
           {
             method: "PUT",
             headers: {

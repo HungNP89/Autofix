@@ -78,7 +78,7 @@ function BookingHistory() {
     try {
       setLoading(true);
       const response = await fetch(
-        `http://localhost:3000/booking/all?id=${userId}&currentPage=${currentPage}&limit=${postPerPage}`
+        `https://autofix-server.onrender.com/booking/all?id=${userId}&currentPage=${currentPage}&limit=${postPerPage}`
       );
       if (response.ok) {
         const data = await response.json();

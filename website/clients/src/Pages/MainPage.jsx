@@ -101,7 +101,7 @@ function MainPage() {
     const month = dayjs().month();
     try {
       const response = await fetch(
-        `http://localhost:3000/booking/all?month=${month}`
+        `https://autofix-server.onrender.com/booking/all?month=${month}`
       );
       if (response.ok) {
         const data = await response.json();  

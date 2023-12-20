@@ -54,7 +54,7 @@ function BookingEditForm({ selectedBooking, userId, onEditingSubmit }) {
     console.log(date);
     try {
       const response = await fetch(
-        `http://localhost:3000/hour/shifts?date=${date}`
+        `https://autofix-server.onrender.com/hour/shifts?date=${date}`
       );
       if (response.ok) {
         const data = await response.json();
@@ -94,7 +94,7 @@ function BookingEditForm({ selectedBooking, userId, onEditingSubmit }) {
     try {
       setIsLoading(true);
       const response = await fetch(
-        `http://localhost:3000/employee/all?date=${date}&hour=${selectedHour}`
+        `https://autofix-server.onrender.com/employee/all?date=${date}&hour=${selectedHour}`
       );
       if (response.ok) {
         const data = await response.json();
@@ -120,7 +120,7 @@ function BookingEditForm({ selectedBooking, userId, onEditingSubmit }) {
     const selectedEmployee = employees[activeMechanic]._id;
 
     try {
-      const response = await fetch(`http://localhost:3000/booking/createP`, {
+      const response = await fetch(`https://autofix-server.onrender.com/booking/createP`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -136,7 +136,7 @@ function BookingEditForm({ selectedBooking, userId, onEditingSubmit }) {
         const data = await response.json();
         console.log(data);
         const deleteResponse = await fetch(
-          `http://localhost:3000/booking/all/${selectedBooking}`,
+          `https://autofix-server.onrender.com/booking/all/${selectedBooking}`,
           {
             method: "DELETE",
           }

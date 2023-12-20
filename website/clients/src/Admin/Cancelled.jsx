@@ -61,7 +61,7 @@ function Cancelled() {
     try {
       setLoading(true);
       const response = await fetch(
-        `http://localhost:3000/booking/all?currentPage=${currentPage}&limit=${postPerPage}&status=${status}`
+        `https://autofix-server.onrender.com/booking/all?currentPage=${currentPage}&limit=${postPerPage}&status=${status}`
       );
       if (response.ok) {
         const data = await response.json();
@@ -104,12 +104,12 @@ function Cancelled() {
     try {
       setLoading(true);
       const response = await fetch(
-        `http://localhost:3000/booking/all?currentPage=${currentPage}&limit=${postPerPage}`
+        `https://autofix-server.onrender.com/booking/all?currentPage=${currentPage}&limit=${postPerPage}`
       );
       if (response.ok) {
         console.log(cancel);
         const updateResponse = await fetch(
-          `http://localhost:3000/booking/all/${cancel}`,
+          `https://autofix-server.onrender.com/booking/all/${cancel}`,
           {
             method: "DELETE",
           }

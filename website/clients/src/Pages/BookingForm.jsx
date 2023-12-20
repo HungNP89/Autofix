@@ -32,7 +32,7 @@ function BookingForm({ selectedDate, userId }) {
     const date = selectedDate.format("YYYY-MM-DD");
     try {
       const response = await fetch(
-        `http://localhost:3000/hour/shifts?date=${date}`
+        `https://autofix-server.onrender.com/hour/shifts?date=${date}`
       );
       if (response.ok) {
         const data = await response.json();
@@ -71,7 +71,7 @@ function BookingForm({ selectedDate, userId }) {
     try {
       setIsLoading(true);
       const response = await fetch(
-        `http://localhost:3000/employee/all?date=${date}&hour=${selectedHour}`
+        `https://autofix-server.onrender.com/employee/all?date=${date}&hour=${selectedHour}`
       );
       if (response.ok) {
         const data = await response.json();
@@ -97,7 +97,7 @@ function BookingForm({ selectedDate, userId }) {
     const selectedEmployee = employees[activeMechanic]._id;
 
     try {
-      const response = await fetch(`http://localhost:3000/booking/createP`, {
+      const response = await fetch(`https://autofix-server.onrender.com/booking/createP`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

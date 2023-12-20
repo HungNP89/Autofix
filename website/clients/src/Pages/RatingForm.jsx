@@ -29,7 +29,7 @@ function RatingForm({ employeeID, onRatingSubmit,  avatar , employeeName , booki
       }
 
       const response = await fetch(
-        `http://localhost:3000/employee/all/${employeeID}`,
+        `https://autofix-server.onrender.com/employee/all/${employeeID}`,
         {
           method: "PUT",
           headers: {
@@ -43,7 +43,7 @@ function RatingForm({ employeeID, onRatingSubmit,  avatar , employeeName , booki
       if (response.ok) {
         const data = await response.json();
         console.log(data);
-        const statusRating = await fetch(`http://localhost:3000/booking/all/${bookingId}`, {
+        const statusRating = await fetch(`https://autofix-server.onrender.com/booking/all/${bookingId}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

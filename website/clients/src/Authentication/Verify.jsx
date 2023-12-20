@@ -33,7 +33,7 @@ function Verify() {
     const name = token.name;
     try {
       const response = await fetch(
-        `http://localhost:3000/user/google/verify?name=${name}&email=${email}`,
+        `https://autofix-server.onrender.com/user/google/verify?name=${name}&email=${email}`,
         {
           method: "POST",
           headers: {

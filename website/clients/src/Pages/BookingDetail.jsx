@@ -79,7 +79,7 @@ function BookingDetail() {
   const formatDate = (date) => {
     return dayjs(date).format("DD-MM-YYYY");
   };
-  const listBooking = `http://localhost:3000/booking/all?id=${userId}&currentPage=${currentPage}&limit=${postPerPage}`;
+  const listBooking = `https://autofix-server.onrender.com/booking/all?id=${userId}&currentPage=${currentPage}&limit=${postPerPage}`;
   const handleData = async () => {
     try {
       setLoading(true);
@@ -169,7 +169,7 @@ function BookingDetail() {
       const response = await fetch(listBooking);
       if (response.ok) {
         const cancelBooking = await fetch(
-          `http://localhost:3000/booking/all/${cancel}`,
+          `https://autofix-server.onrender.com/booking/all/${cancel}`,
           {
             method: "PUT",
             headers: {
