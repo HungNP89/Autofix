@@ -66,7 +66,7 @@ function Register() {
   const handleSubmit = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:3000/user/register", {
+      const response = await fetch("https://autofix-server.onrender.com/user/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
